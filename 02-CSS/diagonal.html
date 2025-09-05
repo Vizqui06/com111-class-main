@@ -1,0 +1,68 @@
+<!doctype html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Ejercicio - Diagonal</title>
+            <style>
+            * { box-sizing: border-box; }
+            body { font-family: Arial, sans-serif; padding: 24px; background:#fafafa; }
+
+            .stage { position: relative; width: 700px; height: 700px; border: 1px dashed #ddd; margin: 0 auto; }
+
+            .box {
+                width: 200px; height: 200px;
+                box-sizing: border-box; /* importante para que padding+border no aumenten el tamaño total */
+                position: absolute;
+            }
+
+            /* primero: 10px borde + 20px espacio (200x200) */
+            .b1 {
+                background: #ffcccb; /* rojo */
+                border: 10px solid #b33;
+                padding: 20px;
+                left: 0px;
+                top: 0px;
+            }
+
+            /* segundo: 20px borde */
+            .b2 {
+                background: #cfe8ff; /* azul */
+                border: 20px solid #1e6fb3;
+                left: 200px;  /* su esquina superior izquierda coincide con la esquina inferior derecha de b1 */
+                top: 200px;
+            }
+
+            /* tercero: 10px borde */
+            .b3 {
+                background: #fff3b0; /* amarillo */
+                border: 10px solid #b38a00;
+                left: 400px;
+                top: 400px;
+            }
+
+            /* para que se vea el punto donde se tocan las esquinas */
+            .dot {
+                position: absolute;
+                width:6px; height:6px; border-radius:50%;
+                background:#222;
+                left: 200px; top: 200px;
+            }
+            </style>
+        </head>
+        <body>
+            <h2>Diagonal — esquinas tocando</h2>
+            <div class="stage">
+                <div class="box b1">Box 1</div>
+                <div class="box b2">Box 2</div>
+                <div class="box b3">Box 3</div>
+                <!-- opcional: punto central donde se juntan las esquinas -->
+                <!-- <div class="dot"></div> -->
+            </div>
+
+            <ul>
+                <a href="index.html">Volver al indice de ejercicios CSS.</a>
+            </ul>
+
+        </body>
+    </html>

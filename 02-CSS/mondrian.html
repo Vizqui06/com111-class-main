@@ -1,0 +1,81 @@
+<!doctype html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Ejercicio - Mondrian</title>
+            <style>
+                * { box-sizing: border-box; }
+                body { font-family: Verdana, Arial, sans-serif; background:#fff; padding: 20px; }
+                .canvas {
+                    width: 900px;
+                    max-width: 95%;
+                    height: 600px;
+                    margin: 0 auto;
+                    background: #ffffff;
+                    border: 12px solid #111; /* marco grueso */
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                /* para los bloques: la IA me sugirió usar floats para simular la composición.
+                    Todos los bloques tienen border negra (estilo Mondrian) */
+                .col-left { float: left; width: 40%; height: 100%; }
+                .col-right { float: right; width: 60%; height: 100%; }
+
+                .block {
+                    border: 8px solid #111;
+                    margin: 0;
+                    background: #fff;
+                }
+
+                
+                .col-left .b1 { height: 45%; background: #fff; } /* blanco grande */
+                .col-left .b2 { height: 25%; background: #f5f5f5; }
+                .col-left .b3 { height: 30%; background: #ffd600; } /* amarillo */
+
+               
+                .col-right .r1 { height: 30%; background: #fff; } /* blanco grande arriba */
+                .col-right .r2 { height: 40%; background: #0a7aa6; } /* azul */
+                .col-right .r3 { height: 30%; background: #fff; display:block;}
+                
+                
+                .r3 .r3a { float:left; width: 60%; height: 100%; background:#fff; border-right:8px solid #111; }
+                .r3 .r3b { float:right; width: 40%; height: 100%; background:#e11; } /* rojo */
+
+                .clearfix::after { content:""; display:table; clear:both; }
+
+                
+                @media (max-width: 720px) {
+                    .canvas { height: auto; border-width: 6px; }
+                    .col-left, .col-right { float:none; width:100%; }
+                    .col-left .b1, .col-left .b2, .col-left .b3, .col-right .r1, .col-right .r2, .col-right .r3 { height: 160px; }
+                    .r3 .r3a, .r3 .r3b { float:none; width:100%; display:block; border-right:none; }
+                }
+            </style>
+        </head>
+        <body>
+            <h2 style="text-align:center;">Mondrian effect</h2>
+            <div class="canvas clearfix">
+                <div class="col-left">
+                    <div class="block b1"></div>
+                    <div class="block b2"></div>
+                    <div class="block b3"></div>
+                </div>
+
+                <div class="col-right">
+                    <div class="block r1"></div>
+                    <div class="block r2"></div>
+                    <div class="block r3 clearfix">
+                        <div class="r3a"></div>
+                        <div class="r3b"></div>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <a href="index.html">Volver al indice de ejercicios CSS.</a>
+            </ul>
+
+        </body>
+    </html>

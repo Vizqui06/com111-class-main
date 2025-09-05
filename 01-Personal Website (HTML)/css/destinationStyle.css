@@ -1,0 +1,43 @@
+body{
+    font-family: 'Merryweather', serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #67c0d0b5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #b318006e;
+    color: white;
+    border-radius: 10px;
+}
+.Ontario-section, .Berlin-section, .Maldives-section, .RivieraMaya-section, .AmalfiCoast-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #96dd3f6e;
+    border-radius: 10px;
+}
+
+hr {
+    border: dotted;
+    border-width: 10px;
+    border-top: 3px;
+    width: 10%;
+}
+
+img.Ontario, img.Berlin, img.Maldives, img.RivieraMaya, img.AmalfiCoast {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}

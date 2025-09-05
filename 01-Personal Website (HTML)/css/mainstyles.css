@@ -1,0 +1,57 @@
+body {
+    font-family: Merryweather, serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #76f2fd6e;
+}
+
+hr {
+    border: dotted;
+    border-width: 10px;
+    border-top: 3px;
+    width: 10%;
+}
+
+
+.pagina {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d06767b5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.AboutMe {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-spacing:15px;
+
+}
+
+.PersonalLife {
+    margin: 2px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border-spacing:15px;
+    border-collapse: separate;
+    text-align: center;
+}
+
+.BackgroundEducation {
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border-spacing:15px;
+    border-collapse: separate;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+

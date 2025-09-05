@@ -1,0 +1,44 @@
+<!doctype html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Ejercicio - Romania</title>
+            <style>
+            * { box-sizing: border-box; }
+            body { font-family: Verdana, Arial, sans-serif; margin: 0; padding: 0; }
+            .flag {
+                width: 100%;
+                max-width: 600px;
+                height: 300px;
+                margin: 24px auto;
+                border: 1px solid #ccc;
+                overflow: hidden; /* limpia floats */
+            }
+            .stripe {
+                float: left;
+                width: 33.3333%;
+                height: 100%;
+            }
+            /* colores de la bandera de Rumania (de izquierda a derecha): azul, amarillo, rojo */
+            .blue { background: #002b7f; }   /* azul oscuro */
+            .yellow { background: #fcd116; } /* amarillo */
+            .red { background: #ce1126; }    /* rojo */
+            .flag::after { content: ""; display: table; clear: both; }
+            h2 { text-align:center; margin-top: 18px; color:#0a3b66;}
+            </style>
+        </head>
+        <body>
+            <h2>Bandera de Rumania (azul - amarillo - rojo)</h2>
+            <div class="flag">
+                <div class="stripe blue"></div>
+                <div class="stripe yellow"></div>
+                <div class="stripe red"></div>
+            </div>
+
+            <ul>
+                <a href="index.html">Volver al indice de ejercicios CSS.</a>
+            </ul>
+
+        </body>
+    </html>
